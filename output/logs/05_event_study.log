@@ -1,0 +1,20 @@
+
+=== Log patents (fractional count, by filing year) ===
+  sample 1976-2019: 23 adopting + 9 never-adopting states, 1,408 state-years
+    dropped: repealed later ['MI', 'MO', 'NC', 'OR']; missing years []; adopted before 1976 []
+  TWFE pre-trend test (event times -10 to -2 jointly zero): p = 0.153
+  CS   pre-trend test (event times -10 to -2 jointly zero): p = 0.572
+  CS pre-period estimates: average 0.035 (s.e. 0.040), 9 of 9 positive
+  CS average effect, years 0-2:  0.035 (s.e. 0.021) -> about 4%
+  CS average effect, years 0-20: -0.038 (s.e. 0.087) -> about -4%
+
+=== Log business R&D spending ===
+  sample 1997-2023: 8 adopting + 8 never-adopting states, 432 state-years
+    dropped: repealed later ['MI', 'MO', 'NC', 'OR']; missing years ['DC', 'DE']; adopted before 1997 ['AZ', 'CA', 'CT', 'IA', 'IL', 'IN', 'MA', 'ME', 'MN', 'ND', 'NJ', 'PA', 'RI', 'WI']
+  TWFE pre-trend test (event times -10 to -2 jointly zero): p = 0.000
+  CS   pre-trend test (event times -10 to -2 jointly zero): p = 0.000
+  CS pre-period estimates: average -0.086 (s.e. 0.120), 4 of 9 positive
+  CS average effect, years 0-2:  0.013 (s.e. 0.095) -> about 1%
+  CS average effect, years 0-20: -0.023 (s.e. 0.138) -> about -2%
+
+Saved tables to output/tables/ and figures to output/figures/

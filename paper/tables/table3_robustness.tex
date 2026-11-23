@@ -1,0 +1,28 @@
+\begin{table}[t]
+\centering
+\caption{Robustness of the patent estimates}
+\label{tab:robustness}
+\small
+\begin{threeparttable}
+\begin{tabular}{lcr@{\,}lr@{\,}lc}
+\toprule
+ & States & \multicolumn{2}{c}{Years 0--2} & \multicolumn{2}{c}{Years 0--20} & Pre-trend \\
+ & (adopt / never) & \multicolumn{2}{c}{} & \multicolumn{2}{c}{} & $p$-value \\
+\midrule
+Main specification & 23 / 9 & $0.035^{*}$ & $(0.021)$ & $-0.038$ & $(0.087)$ & 0.572 \\
+Keep 4 states that later repealed & 27 / 9 & $0.030$ & $(0.020)$ & $-0.011$ & $(0.080)$ & 0.422 \\
+Iowa start years for AZ, CA, IN, MN & 23 / 9 & $0.024$ & $(0.021)$ & $-0.046$ & $(0.088)$ & 0.575 \\
+Never-adopting comparison only & 23 / 9 & $0.048^{*}$ & $(0.027)$ & $-0.018$ & $(0.095)$ & 0.473 \\
+Log patents per 100,000 residents & 23 / 9 & $0.040^{*}$ & $(0.021)$ & $-0.013$ & $(0.081)$ & 0.594 \\
+Drop California & 22 / 9 & $0.037^{*}$ & $(0.022)$ & $-0.058$ & $(0.086)$ & 0.582 \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[flushleft]\footnotesize
+\item \textit{Notes:} Each row changes one choice from the main specification and re-estimates the
+Callaway--Sant'Anna event study. Entries are average effects on log patents relative to the year before
+adoption, with bootstrap standard errors clustered by state (999 resamples) in parentheses.
+The main specification is column (1) of Table 2. Arizona, California, Indiana and Minnesota are the four
+states whose two sources differ by one year. $^{*}p<0.1$, $^{**}p<0.05$, $^{***}p<0.01$.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}

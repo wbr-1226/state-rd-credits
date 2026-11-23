@@ -1,0 +1,10 @@
+# Python 3.10 or later. Versions used to produce the paper:
+numpy==2.2.6
+pandas==2.3.3
+scipy==1.15.3
+matplotlib==3.10.9
+pyfixest==0.60.0
+
+# Optional: only for code/check_cs_estimator.py (cross-check of the estimator)
+# csdid==0.4.5
+# moderndid==0.0.3

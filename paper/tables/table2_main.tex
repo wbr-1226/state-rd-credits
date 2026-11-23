@@ -1,0 +1,45 @@
+\begin{table}[t]
+\centering
+\caption{Effect of adopting an R\&D tax credit on log patents}
+\label{tab:main}
+\begin{threeparttable}
+\begin{tabular}{lccc}
+\toprule
+ & (1) & (2) & (3) \\
+ & CS, not-yet-treated & CS, never-treated & TWFE \\
+ & comparison & comparison & event study \\
+\midrule
+Years 0--2 & $0.035^{*}$ & $0.048^{*}$ & $0.035^{*}$ \\
+ & $(0.021)$ & $(0.027)$ & $(0.021)$ \\[2pt]
+Years 3--10 & $-0.038$ & $-0.011$ & $-0.027$ \\
+ & $(0.070)$ & $(0.070)$ & $(0.064)$ \\[2pt]
+Years 11--20 & $-0.060$ & $-0.044$ & $-0.048$ \\
+ & $(0.128)$ & $(0.140)$ & $(0.128)$ \\[2pt]
+Years 0--20 (all) & $-0.038$ & $-0.018$ & $-0.028$ \\
+ & $(0.087)$ & $(0.095)$ & $(0.086)$ \\[2pt]
+\midrule
+\multicolumn{4}{l}{\textit{Compared with the years before adoption}} \\
+Years $-5$ to $-2$ (before adoption) & $0.044^{*}$ & $0.040$ & $0.044$ \\
+ & $(0.023)$ & $(0.032)$ & $(0.027)$ \\[2pt]
+Years 0--2 minus years $-5$ to $-2$ & $-0.009$ & $0.007$ & $-0.009$ \\
+ & $(0.029)$ & $(0.044)$ & $(0.036)$ \\[2pt]
+\midrule
+Pre-trend test, $p$-value & 0.572 & 0.473 & 0.153 \\
+\midrule
+Adopting / never-adopting states & 23 / 9 & 23 / 9 & 23 / 9 \\
+State-years & 1,408 & 1,408 & 1,408 \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[flushleft]\footnotesize
+\item \textit{Notes:} Each entry averages the event-time estimates over the years shown; year 0 is
+the first year with a credit. All estimates measure log patents relative to the year before adoption
+(year $-1$), except the last estimate row, which compares years 0--2 with the average of years $-5$ to $-2$.
+Columns (1) and (2) use the estimator of \citet{callaway2021difference}; column (1) compares each
+adoption cohort with states that never adopt or adopt later, column (2) with never-adopting states only.
+Column (3) regresses log patents on event-time indicators with state and year fixed effects (endpoints
+binned at $-10$ and $+20$). Standard errors clustered by state: bootstrap with 999 state resamples in
+(1)--(2), analytic in (3). The pre-trend test asks whether the estimates for years $-10$ to $-2$ are jointly
+zero. $^{*}p<0.1$, $^{**}p<0.05$, $^{***}p<0.01$.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}

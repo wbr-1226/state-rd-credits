@@ -1,0 +1,33 @@
+\begin{table}[t]
+\centering
+\caption{Heterogeneity: owner size and credit value}
+\label{tab:heterogeneity}
+\begin{threeparttable}
+\begin{tabular}{lr@{\,}lr@{\,}lc}
+\toprule
+ & \multicolumn{2}{c}{Years 0--2} & \multicolumn{2}{c}{Years 0--20} & Pre-trend $p$ \\
+\midrule
+\multicolumn{6}{l}{\textit{A. By size of the patent owner; outcome $\log(1+\text{patents})$}} \\
+\quad Small owners ($<$50 patents) & $0.048$ & $(0.048)$ & $-0.096$ & $(0.080)$ & 0.004 \\
+\quad Large owners (500+) & $-0.040$ & $(0.055)$ & $-0.184$ & $(0.183)$ & 0.822 \\
+\quad No organization owner & $0.032$ & $(0.024)$ & $-0.106^{*}$ & $(0.054)$ & 0.792 \\
+\quad Small minus large & $0.088$ & $(0.077)$ & $0.088$ & $(0.149)$ & 0.112 \\
+\midrule
+\multicolumn{6}{l}{\textit{B. By effective value of the credit; outcome log patents}} \\
+\quad High-value credits (15 states) & $0.023$ & $(0.025)$ & $-0.029$ & $(0.099)$ & 0.647 \\
+\quad Low-value credits (6 states) & $0.044$ & $(0.042)$ & $-0.081$ & $(0.117)$ & 0.057 \\
+\quad High minus low & $-0.021$ & $(0.045)$ & $0.052$ & $(0.121)$ & \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[flushleft]\footnotesize
+\item \textit{Notes:} Callaway--Sant'Anna estimates, not-yet-treated comparison, 23 adopting and 9
+never-adopting states, 1976--2019. Panel A splits each state's patents by the size of the first-listed
+organization owner (its total patents in the whole data); the difference row re-estimates the model on
+the gap $\log(1+\text{small})-\log(1+\text{large})$. Panel B averages only the adoption cohorts whose
+credit has a low effective rate (below 1 percent; all have a moving-average base: DE, IL, MD, ME, NE, PA)
+or a high one (2.5 percent or more: AZ, CA, CT, GA, IA, ID, IN, LA, MA, MN, ND, NJ, RI, SC, WI), using the effective rates in
+\citet{wilson2009beggar}; all states still serve as comparisons while they have not adopted.
+Bootstrap standard errors clustered by state in parentheses. $^{*}p<0.1$, $^{**}p<0.05$, $^{***}p<0.01$.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}

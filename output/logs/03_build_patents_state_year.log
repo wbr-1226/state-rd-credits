@@ -1,0 +1,43 @@
+Reading patent tables...
+  29 reissue patents mislabelled as utility dropped
+  patents: 9,454,161 granted, 8,531,932 utility
+    91 impossible filing dates set to missing; 0.00% of utility patents have no usable filing year
+    116,783 were filed before 1976 (granted later; outside the filing-year panel)
+  locations: 100,452 total, 28,873 in the 50 states + DC
+    chunk 1: 1,857,292 utility inventor rows so far
+    chunk 2: 3,713,902 utility inventor rows so far
+    chunk 3: 5,570,904 utility inventor rows so far
+    chunk 4: 7,428,090 utility inventor rows so far
+    chunk 5: 9,284,593 utility inventor rows so far
+    chunk 6: 11,141,667 utility inventor rows so far
+    chunk 7: 12,998,791 utility inventor rows so far
+    chunk 8: 14,855,762 utility inventor rows so far
+    chunk 9: 16,712,987 utility inventor rows so far
+    chunk 10: 18,570,709 utility inventor rows so far
+    chunk 11: 20,428,153 utility inventor rows so far
+    chunk 12: 22,285,700 utility inventor rows so far
+    chunk 13: 22,320,381 utility inventor rows so far
+  inventors: 22,320,381 on utility patents, 47.7% located in a U.S. state
+
+CHECK 1  U.S.-invented utility patents by grant year (fractional count, selected years)
+year
+1980     37220.0
+1990     47323.0
+2000     84711.0
+2010    107158.0
+2020    164101.0
+2024    139887.0
+
+CHECK 2  Compare with NCSES patents by state and year (NCSES uses a different count)
+         1,479 state-years matched; correlation 1.000; our total / NCSES total = 1.00
+
+CHECK 3  Largest states by patents filed in 2015 (fractional count)
+state_fips  patents_frac
+        06       38444.0
+        48        9965.0
+        36        8564.0
+        25        6893.0
+        53        6697.0
+
+Saved data/clean/patents_state_year.csv (2,550 rows)
+Saved data/intermediate/patent_state_shares.pkl (5,326,992 patent-state rows)

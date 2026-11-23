@@ -1,0 +1,27 @@
+CHECK 1  Largest patent owners (should be familiar large firms)
+             disambig_assignee_organization  patents
+International Business Machines Corporation   162425
+                  SAMSUNG DISPLAY CO., LTD.   160406
+                     CANON KABUSHIKI KAISHA    89404
+                     SONY GROUP CORPORATION    58345
+                            Fujitsu Limited    54910
+         organizations by size group: {'small': 431796, 'medium': 10373, 'large': 1661}
+
+CHECK 2  Share of U.S.-invented patents (filed 1976-2019) by owner size
+size_group
+small     19.7%
+medium    15.6%
+large     48.4%
+none      16.3%
+
+CHECK 3  Groups add up to the total in every state-year (largest gap 0.000000)
+
+CS event study of log(1 + patents) by owner size
+  sample 1976-2019: 23 adopting + 9 never-adopting states, 1,408 state-years
+    dropped: repealed later ['MI', 'MO', 'NC', 'OR']; missing years []; adopted before 1976 []
+  small  years 0-2:  0.048 (0.048)   years 0-20: -0.096 (0.080)   pre-trend p = 0.004
+  large  years 0-2: -0.040 (0.055)   years 0-20: -0.184 (0.183)   pre-trend p = 0.822
+  none   years 0-2:  0.032 (0.024)   years 0-20: -0.106 (0.054)   pre-trend p = 0.792
+  small minus large  years 0-2:  0.088 (0.077), p = 0.254   years 0-20:  0.088 (0.149), p = 0.556
+
+Saved tables to output/tables/ and the figure to output/figures/

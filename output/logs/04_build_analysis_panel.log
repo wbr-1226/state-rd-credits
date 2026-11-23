@@ -1,0 +1,21 @@
+Loading inputs...
+  business_rd: 1997-2023, 34 suppressed or unavailable cells
+  private_output: 1997-2024, 28 suppressed or unavailable cells
+
+CHECK 1  Every state-year has population, and patent counts are never missing
+         population complete; 0 state-years with zero patents before 2020
+
+CHECK 2  Coverage of business R&D (state-years with data, by period)
+         1997-2023: 1,370 state-years (51 states)
+
+CHECK 3  Sums across states vs. U.S. totals
+         population 2020, 50 states + DC: 331.6 million (Census: about 331)
+         business R&D 2019: states sum to $491,925m, U.S. total $492,956m (99.8%; the rest is undistributed or suppressed)
+
+CHECK 4  Main-sample patents per 100,000 people, by credit status (descriptive only)
+               count  mean   50%
+credit_active                   
+0              954.0  17.0  13.5
+1              630.0  35.7  29.6
+
+Saved data/clean/analysis_panel.csv (2,550 rows, 22 columns)

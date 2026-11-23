@@ -1,0 +1,33 @@
+# Raw data: large public files that must be downloaded (see data/raw/README_data_sources.md).
+# Only the hand-coded policy files, the download log and the data README are kept.
+data/raw/**
+!data/raw/
+!data/raw/README_data_sources.md
+!data/raw/download_log.csv
+!data/raw/policy/
+!data/raw/policy/state_rd_credit_sources_handcoded.csv
+!data/raw/policy/iowa_table2_state_counts.csv
+
+# Large intermediate files, rebuilt by script 03
+data/intermediate/
+
+# Logs from runs outside run_all.py (run_all.py writes to output/logs/)
+output/*.log
+output/*.txt
+
+# Python, LaTeX and system files
+__pycache__/
+*.pyc
+.DS_Store
+paper/*.aux
+paper/*.bbl
+paper/*.blg
+paper/*.log
+paper/*.out
+paper/*.fls
+paper/*.fdb_latexmk
+paper/*.synctex.gz
+paper/overleaf_upload.zip
+
+# Clean copy prepared for uploading to GitHub
+github_upload/

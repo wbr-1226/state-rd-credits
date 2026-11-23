@@ -1,0 +1,10 @@
+ATT(g,t) for log patents: this project's code vs csdid
+  notyettreated, universal base                     774 cells   largest gap 6.66e-16
+  notyettreated, varying base                       774 cells   largest gap 6.66e-16
+  nevertreated, universal base                      774 cells   largest gap 4.44e-16
+  nevertreated, varying base                        774 cells   largest gap 4.44e-16
+  -> identical (up to rounding)
+
+For reference: this project's code vs moderndid 0.0.3 (varying base)
+  nevertreated                                      774 cells   largest gap 3.43e-16
+  notyettreated                                     739 cells   largest gap 1.11e+00

@@ -1,0 +1,10 @@
+CS average effects on log patents (standard errors in parentheses)
+  main             years 0-2:  0.035 (0.021)   years 0-20: -0.038 (0.087)   pre-trend p = 0.572   states: 23 + 9
+  with_repealers   years 0-2:  0.031 (0.020)   years 0-20: -0.011 (0.080)   pre-trend p = 0.422   states: 27 + 9
+  (iowa_years changes: AZ, CA, IN, MN)
+  iowa_years       years 0-2:  0.024 (0.021)   years 0-20: -0.046 (0.088)   pre-trend p = 0.575   states: 23 + 9
+  never_treated    years 0-2:  0.048 (0.027)   years 0-20: -0.018 (0.095)   pre-trend p = 0.473   states: 23 + 9
+  per_capita       years 0-2:  0.040 (0.021)   years 0-20: -0.013 (0.081)   pre-trend p = 0.594   states: 23 + 9
+  drop_california  years 0-2:  0.037 (0.023)   years 0-20: -0.058 (0.086)   pre-trend p = 0.582   states: 22 + 9
+
+Saved output/tables/robustness_patents.csv
